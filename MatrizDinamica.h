@@ -44,7 +44,10 @@ public:
     MatrizDinamica(int filas, int columnas)
         : MatrizBase<T>(filas, columnas), _datos(nullptr) { reservar(filas, columnas); }
 
-    ~MatrizDinamica() override { liberar(); }
+    ~MatrizDinamica() override {
+        std::cout << "Liberando memoria de Matriz Dinamica..." << '\n';
+        liberar();
+    }
 
     MatrizDinamica(const MatrizDinamica& o)
         : MatrizBase<T>(o._filas, o._columnas), _datos(nullptr) { copiarDesde(o); }

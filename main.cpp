@@ -32,7 +32,7 @@ int main() {
 	cout << "B =" << endl; B->imprimir(); cout << endl;
 
 	cout << "SUMANDO: Matriz C = A + B ..." << endl;
-	MatrizBase<float>* C = (*A) + (*B); // manejado por método virtual de A (dinámica)
+	MatrizBase<float>* C = (*A) + (*B); // manejado por metodo virtual de A (dinamica)
 	cout << endl << "Matriz Resultado C (3x2, Tipo FLOAT):" << endl;
 	C->imprimir();
 
